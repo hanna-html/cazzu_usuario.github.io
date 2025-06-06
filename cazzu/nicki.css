@@ -31,21 +31,27 @@ h1 {
   user-select: none;
   -webkit-user-drag: none;
 }
-/* Botón fijo */
-.boton-fija {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: white;
-  color: black;
-  padding: 12px 20px;
-  text-decoration: none;
+button {
+  margin-top: 8px;
+  padding: 8px 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
   font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 
-.boton-fija:hover {
-  background-color: #ccc;
+.boton-fijo-lateral {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 0 5px 5px 0;
+  font-weight: bold;
 }
