@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* asegura que el fondo ocupe toda la pantalla */
+    background: linear-gradient(to bottom, #000000, #202020, #404040, #606060);
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+.menu {
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    position: fixed;
+    left: -200px; /* Oculto inicialmente */
+    transition: left 0.3s;
+}
+
+.menu.open {
+    left: 0; /* Muestra el menú */
+}
+.menu button {
+    width: 100%;
+    padding: 15px;
+    background-color: #444;
+    color: rgb(250, 248, 248);
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.menu button:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #363d52;
+    color: white;
+    border: none;cursor: pointer;
+}
+
+.content {
+    margin-left: 220px; /* Espacio para el menú */
+    padding: 20px;
+}

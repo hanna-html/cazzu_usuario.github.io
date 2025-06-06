@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tema con Subtemas</title>
+  <link rel="stylesheet" href="gato.css" />
+</head>
+<body>
+  <div class="contenido">
+    <h1>Prevención</h1>
+
+    <section class="subtema">
+      <h2>¿Cómo prevenir desde el ámbito socioemocional?</h2>
+      <button onclick="toggleInfo('info1')">Ver más</button>
+      <div id="info1" class="informacion">
+        <ul>
+          <li>Fomentar la educación emocional en casa y en la escuela.</li>
+          <li>Promover espacios seguros donde los jóvenes puedan hablar sin miedo ni juicio.</li>
+          <li>Escuchar activamente, validar sus emociones y evitar minimizar su dolor.</li>
+          <li>Enseñar herramientas de regulación emocional (respiración, expresión artística, diálogo, ejercicio, terapia).</li>
+          <li>Detectar señales de alerta y pedir ayuda profesional a tiempo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="subtema">
+      <h2>En México</h2>
+      <button onclick="toggleInfo('info2')">Ver más</button>
+      <div id="info2" class="informacion">
+        <ul>
+          <li>En 2023, se registraron 8,837 suicidios en el país, representando el 1.1% del total de muertes.</li>
+          <li>El suicidio fue la cuarta causa principal de muerte entre personas de 15 a 29 años.</li>
+          <li>Entre adolescentes de 10 a 17 años, se reportaron 727 suicidios, con una tasa de 4 por cada 100,000 en ese grupo de edad.</li>
+          <li>Las tasas más altas de suicidio en jóvenes se observaron en Chihuahua (26.4), Yucatán (23.5) y Campeche (18.8) por cada 100,000 habitantes.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="subtema">
+      <h2>En el mundo</h2>
+      <button onclick="toggleInfo('info3')">Ver más</button>
+      <div id="info3" class="informacion">
+        <ul>
+          <li>Cada año, más de 720,000 personas mueren por suicidio en todo el mundo.</li>
+          <li>El suicidio es la tercera causa principal de muerte entre jóvenes de 15 a 29 años a nivel global.</li>
+          <li>Aproximadamente el 73% de los suicidios ocurren en países de ingresos bajos y medianos.</li>
+          <li>En la región de las Américas, se estima que ocurren 100,000 suicidios al año.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="subtema">
+      <h2>Intervenciones escolares</h2>
+      <button onclick="toggleInfo('info4')">Ver más</button>
+      <div id="info4" class="informacion">
+        <ul>
+          <li>Capacitación docente en salud mental.</li>
+          <li>Talleres para alumnos sobre manejo del estrés.</li>
+          <li>Protocolos institucionales de actuación en crisis.</li>
+          <li>Involucramiento de padres y comunidad.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function toggleInfo(id) {
+      const info = document.getElementById(id);
+      info.style.display = info.style.display === "block" ? "none" : "block";
+    }
+  </script>
+  <!-- Botón fijo al costado izquierdo -->
+<a href="html.html" class="boton-fijo-lateral">Inicio</a>
+
+</body>
+</html>

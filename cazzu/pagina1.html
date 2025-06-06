@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Causa e Impacto</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+    <h1>CAUSA Y IMPACTO</h1>
+  </header>
+
+  <main>
+    <section class="seccion">
+      <div class="seccion-encabezado">
+        <h2>1. Bullying</h2>
+        <button onclick="toggleInfo('info1', this)">Ver más</button>
+      </div>
+      <div id="info1" class="contenido-oculto">
+        <p><strong>Causa:</strong> Rechazo social, humillación constante, aislamiento.</p>
+        <p><strong>Impacto:</strong> Baja autoestima, ansiedad, pensamientos suicidas.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="seccion-encabezado">
+        <h2>2. Problemas familiares</h2>
+        <button onclick="toggleInfo('info2', this)">Ver más</button>
+      </div>
+      <div id="info2" class="contenido-oculto">
+        <p><strong>Causa:</strong> Violencia, abandono, falta de apoyo o validación emocional.</p>
+        <p><strong>Impacto:</strong> Sentimientos de soledad, desesperanza, inseguridad.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="seccion-encabezado">
+        <h2>3. Presión académica y social</h2>
+        <button onclick="toggleInfo('info3', this)">Ver más</button>
+      </div>
+      <div id="info3" class="contenido-oculto">
+        <p><strong>Causa:</strong> Expectativas altas, miedo al fracaso, comparación con otros.</p>
+        <p><strong>Impacto:</strong> Estrés crónico, ansiedad, pérdida de sentido.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="seccion-encabezado">
+        <h2>4. Falta de apoyo emocional</h2>
+        <button onclick="toggleInfo('info4', this)">Ver más</button>
+      </div>
+      <div id="info4" class="contenido-oculto">
+        <p><strong>Causa:</strong> No tener con quién hablar o sentirse escuchado.</p>
+        <p><strong>Impacto:</strong> Aislamiento emocional, acumulación de sufrimiento.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="seccion-encabezado">
+        <h2>5. Salud mental no atendida</h2>
+        <button onclick="toggleInfo('info5', this)">Ver más</button>
+      </div>
+      <div id="info5" class="contenido-oculto">
+        <p><strong>Causa:</strong> Depresión, ansiedad, traumas no tratados.</p>
+        <p><strong>Impacto:</strong> Pensamientos autodestructivos, crisis sin contención.</p>
+      </div>
+    </section>
+
+    <a href="html.html" class="boton-lateral">Volver a la página principal</a>
+  </main>
+
+  <script>
+    function toggleInfo(id, btn) {
+      const content = document.getElementById(id);
+      const isVisible = content.style.display === "block";
+      content.style.display = isVisible ? "none" : "block";
+      btn.textContent = isVisible ? "Ver más" : "Ver menos";
+    }
+  </script>
+</body>
+</html>

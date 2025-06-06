@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tema con Subtemas</title>
+  <link rel="stylesheet" href="gato.css" />
+</head>
+<body>
+  <div class="contenido">
+    <h1>¿Cómo identificar indicios o señales de alerta?</h1>
+
+    <!-- Subtema 1 -->
+    <section class="subtema">
+      <h2>Cambios emocionales y de conducta</h2>
+      <button onclick="toggleInfo('info1')">Ver más</button>
+      <div id="info1" class="informacion" style="display:none;">
+        <ul>
+          <li>Aislamiento social repentino</li>
+          <li>Tristeza constante, llanto fácil o irritabilidad.</li>
+          <li>Desinterés por actividades que antes disfrutaban.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Subtema 2 -->
+    <section class="subtema">
+      <h2>Cambios en el lenguaje o expresión</h2>
+      <button onclick="toggleInfo('info2')">Ver más</button>
+      <div id="info2" class="informacion" style="display:none;">
+        <ul>
+          <li>Frases como: “ya no quiero estar aquí”, “mi vida no tiene sentido”, “todos estarían mejor sin mí”.</li>
+          <li>Hablar o escribir sobre la muerte, el suicidio o el deseo de desaparecer.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Subtema 3 -->
+    <section class="subtema">
+      <h2>Cambios físicos o escolares</h2>
+      <button onclick="toggleInfo('info3')">Ver más</button>
+      <div id="info3" class="informacion" style="display:none;">
+        <ul>
+          <li>Insomnio o dormir en exceso.</li>
+          <li>Pérdida de apetito o descuido personal.</li>
+          <li>Bajo rendimiento escolar, faltas frecuentes o desconexión en clase.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Subtema 4 -->
+    <section class="subtema">
+      <h2>Conductas de riesgo</h2>
+      <button onclick="toggleInfo('info4')">Ver más</button>
+      <div id="info4" class="informacion" style="display:none;">
+        <ul>
+          <li>Consumo de sustancias.</li>
+          <li>Autolesiones (cortes, golpes).</li>
+          <li>Regalar objetos importantes o despedirse sin razón.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Subtema 5 con subtemas -->
+    <section class="subtema">
+      <h2>¿Qué hacer si se detecta alguna señal?</h2>
+      <button onclick="toggleInfo('info5')">Ver más</button>
+      <div id="info5" class="informacion" style="display:none;">
+        <ul>
+          <li>Toma en serio cualquier señal, por mínima que parezca.</li>
+          <li>No juzgues ni reacciones con enojo. Escucha y acompaña.</li>
+        </ul>
+
+        <!-- Sub-subtema 5.1 -->
+        <div class="subtema">
+          <h3>Busca ayuda profesional inmediatamente.</h3>
+          <button onclick="toggleInfo('info5_1')">Ver más</button>
+          <div id="info5_1" class="informacion" style="display:none;">
+            <ul>
+              <li>Psicólogos escolares.</li>
+              <li>Centros de salud mental.</li>
+              <li>Líneas de emergencia (como SAPTEL en México: 800 472 7835).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function toggleInfo(id) {
+      const info = document.getElementById(id);
+      if (info) {
+        info.style.display = info.style.display === "block" ? "none" : "block";
+      }
+    }
+  </script>
+
+  <!-- Botón fijo al costado izquierdo -->
+  <a href="html.html" class="boton-fijo-lateral">menú</a>
+</body>
+</html>

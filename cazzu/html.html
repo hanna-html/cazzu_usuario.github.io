@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web con Menú Lateral</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlazando el CSS -->
+</head>
+<body>
+
+<button class="toggle-button" onclick="toggleMenu()">☰ Abrir Menú</button>
+<div class="menu" id="menu">
+    <button onclick="location.href='pagina1.html'">APARENTES RAZONES</button>
+    <button onclick="location.href='Causas Socioemocionales del Suicidio en Jóvenes.html'">CAUSAS SOCIOEMOCIONALES</button>
+    <button onclick="location.href='pagina3.html'">PREVENCION</button>
+    <button onclick="location.href='pagina4.html'">IDENTIFICACION</button>
+    <button onclick="location.href='hola.html'">DIAGRAMA</button>
+    <button onclick="location.href='pagina5.html'">ANGUSTIA</button>
+</div>
+<div class="content">
+    <h1><p>Proyecto transversal</p>
+<p>Probabilidad y estadística</p> 
+<p>Prevención del suicidio en nivel medio superior </p>
+</h1>
+    <p>Si usted o alguien que conoce está en crisis
+Para ayuda, llame al 800-911-2000.8 La línea de ayuda ofrece apoyo emocional, de forma gratuita y confidencial, a personas en crisis de suicidio o angustia emocional. Esta línea está abierta 24 horas al día, 7 días a la semana y los 365 días del año en México.
+</p>
+</div>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('open');
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #000000, #808080);
+  color: white;
+}
+
+.contenido {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.subtema {
+  background-color: rgba(255, 255, 255, 0.07);
+  border-left: 6px solid #4CAF50;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.subtema:hover {
+  transform: scale(1.01);
+}
+
+.informacion {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 15px;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+button {
+  margin-top: 8px;
+  padding: 8px 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.boton-fijo-lateral {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 0 5px 5px 0;
+  font-weight: bold;
+}
+
+h1, h2, h3 {
+  color: #fff;
+}
